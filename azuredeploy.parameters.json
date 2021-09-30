@@ -36,7 +36,7 @@
       "value": "<PostgreSQL Hyperscale deployment (true/false)>"
     },
     "templateBaseUrl": {
-      "value": "https://raw.githubusercontent.com/aurnovcy/data-services-tailwind/"
+      "value": "https://raw.githubusercontent.com/aurnovcy/data-services-tailwind/a8efbeaab2585e147f44062983006ac3124a1896/"
     },
     "kubernetesVersion": {
       "value": "1.19.11"
