@@ -116,9 +116,9 @@ $extensionId = az k8s-extension show --name arc-data-services `
 Start-Sleep -Seconds 20
 
 # Create Custom Location
-az customlocation create --name 'jumpstart-cl' `
+az customlocation create --name 'tailwind-cl' `
                          --resource-group $env:resourceGroup `
-                         --namespace arc `
+                         --namespace arc2 `
                          --host-resource-id $connectedClusterId `
                          --cluster-extension-ids $extensionId
 
@@ -126,7 +126,7 @@ az customlocation create --name 'jumpstart-cl' `
 Write-Host "Deploying Azure Arc Data Controller"
 Write-Host "`n"
 
-$customLocationId = $(az customlocation show --name "jumpstart-cl" --resource-group $env:resourceGroup --query id -o tsv)
+$customLocationId = $(az customlocation show --name "tailwind-cl" --resource-group $env:resourceGroup --query id -o tsv)
 $workspaceId = $(az resource show --resource-group $env:resourceGroup --name $env:workspaceName --resource-type "Microsoft.OperationalInsights/workspaces" --query properties.customerId -o tsv)
 $workspaceKey = $(az monitor log-analytics workspace get-shared-keys --resource-group $env:resourceGroup --workspace-name $env:workspaceName --query primarySharedKey -o tsv)
 
