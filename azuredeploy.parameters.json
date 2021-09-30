@@ -36,7 +36,7 @@
       "value": "<PostgreSQL Hyperscale deployment (true/false)>"
     },
     "templateBaseUrl": {
-      "value": "https://raw.githubusercontent.com/microsoft/azure_arc/main/azure_arc_data_jumpstart/aks/arm_template/"
+      "value": "https://raw.githubusercontent.com/aurnovcy/data-services-tailwind/"
     },
     "kubernetesVersion": {
       "value": "1.19.11"
