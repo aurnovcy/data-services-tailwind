@@ -7,7 +7,7 @@ If(-not(Get-InstalledModule SQLServer -ErrorAction silentlycontinue)){
 }
 
 # Deployment environment variables
-$connectedClusterName = "Arc-Data-AKS"
+$connectedClusterName = "Tailwind-Site-1"
 
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
