@@ -67,7 +67,7 @@ az -v
 Write-Host "Getting AKS cluster credentials"
 Write-Host "`n"
 az aks get-credentials --resource-group $env:resourceGroup `
-                       --name $env:clusterName --admin
+                       --name $connectedClusterName --admin
 
 Write-Host "Checking kubernetes nodes"
 Write-Host "`n"
